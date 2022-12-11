@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Expense Traker App</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--favicon-->
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+
+    <link rel="stylesheet" href="style.css"
+
+
+
+
+  </head>
+  <body>
+
+    
+    <div class="container">
+      <p class="balance">CURRENT BALANCE:</p>
+      <h1 id="balance">€0.0</h1>
+      <div class="inc-exp-container">
+        <div>
+          <h4>INCOME</h4>
+          <p id="money-plus" class="money plus">+€0.00</p>
+        </div>
+        <div>
+          <h4>EXPENSES</h4>
+          <p id="money-minus" class="money minus">-€0.00</p>
+        </div>
+      </div>
+      <h3><input type="checkbox" id="show-hide" checked onclick=showHideList()>Show/Hide Transactions list</input></h3>
+      
+      <ul id="list" class="list">
+      </ul>
+
+      <!--reset list of transactions-->
+      <button class="btn" id="clear-btn" onclick=ask()>CLEAR LOCAL STORAGE</button>
+      <div class="divclass">
+        
+        </div>
+
+      <h3>Add new transation</h3>
+      <form action="" id="form">
+        <div class="form-control">
+          <label for="text">Description</label>
+          <input type="text" id="text" placeholder="please enter the text..." />
+        </div>
+        <div class="form-control">
+          <label for="amount"
+            >Amount <br/>
+            ( '-' = expense, '+' = income) </label>
+          <input
+            type="number"
+            id="amount"
+            placeholder="please enter the amount..."
+          />
+        </div>
+        <button class="btn">+ TRANSACTION</button>
+      </form>
+    </div>
+    <footer>
+      <p>
+        Created by
+        <a target="_blank" href="https://github.com/Warszawa1">Irene AV</a>
+        and 🐺's help.
+      </p>
+    </footer>
+
+    <script src="script.js" async defer></script>
+  </body>
+</html>
